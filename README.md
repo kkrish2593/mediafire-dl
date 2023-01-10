@@ -52,3 +52,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 * [gdown](https://github.com/wkentaro/gdown)
 * [openload-dl](https://github.com/gius-italy/openload-dl)
 * [mediafire-dl](https://github.com/pythonoma/mediafire-dl)
+
+Powershell Automation
+$links = import-csv .links.csv -delimiter "`t"
+
+foreach ($link in $links)
+{
+$Alink = $link.Imgur $Blink = $null .gallery-dl.exe $Alink
+}
